@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="160dp">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/event_cardList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="6dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:id="@+id/matchteamA_textview"
+                    android:text="Team A"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="8dp"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="VS"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="8dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:id="@+id/matchteamB_textview"
+                    android:text="Team B"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="8dp"/>
+
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/matchdate_textview"
+                android:text="Senin,12 Agustus 2019"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

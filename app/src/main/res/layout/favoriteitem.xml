@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/event_cardList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="6dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="20sp"
+                    android:text="Title"
+                    android:gravity="center"
+                    android:id="@+id/favitem_title"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="2"
+                        android:id="@+id/favitem_hometeam"
+                        android:text="Team A"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="VS"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="2"
+                        android:id="@+id/favitem_awayteam"
+                        android:text="Team B"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="2"
+                        android:id="@+id/favitem_scorehome"
+                        android:text="--"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="2"
+                        android:id="@+id/favitem_scoreaway"
+                        android:text="--"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+            </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:id="@+id/favitem_matchdate"
+                    android:text="Senin,12 Agustus 2019"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

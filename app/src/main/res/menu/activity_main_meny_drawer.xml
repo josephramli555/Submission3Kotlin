@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/FragmentLeagueList"
+                android:icon="@drawable/soccer"
+                android:title="League List and Match"/>
+        <item
+                android:id="@+id/searchevent"
+                android:icon="@drawable/ic_search"
+                android:title="Search Event"/>
+        <item
+                android:id="@+id/favoritepastmatch"
+                android:icon="@drawable/baseline_favorite_24px"
+                android:title="Favorite Past Match"/>
+        <item
+                android:id="@+id/favoritenextmatch"
+                android:icon="@drawable/baseline_favorite_24px"
+                android:title="Favorite Next Match"/>
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/eventdetail_progbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+            android:layout_below="@+id/eventdetail_progbar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/eventdetail_poster"
+            android:src="@drawable/ic_menu_gallery"
+            android:scaleType="fitCenter"/>
+
+    <LinearLayout
+            android:layout_below="@+id/eventdetail_poster"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/detailevent_headerhome"
+            android:orientation="horizontal"
+            android:weightSum="5">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="Home"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text=""
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="Away"
+                android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/detailevent_headerScore"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_below="@+id/detailevent_headerhome">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:textStyle="italic"
+                android:textSize="24sp"
+                android:id="@+id/eventdetail_scorehome"
+                android:text="Not Played"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text=":"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:textStyle="italic"
+                android:textSize="24sp"
+                android:id="@+id/eventdetail_scoreaway"
+                android:text="Not Played"
+                android:gravity="center"/>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+            android:id="@+id/event_cardList"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:layout_below="@id/detailevent_headerScore"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="6dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_below="@id/detailevent_headerScore">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:id="@+id/linearvs">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:id="@+id/eventdetail_hometam"
+                    android:text="Team A"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="8dp"/>
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="VS"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="8dp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:id="@+id/eventdetail_awayteam"
+                    android:text="Team B"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:padding="8dp"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/eventdetail_matchdate"
+                android:text="Senin,12 Agustus 2019"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Formation"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/eventdetail_formationheader"
+            android:layout_below="@id/event_cardList"/>
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:layout_below="@id/eventdetail_formationheader"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_below="@+id/eventdetail_formationheader">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:textStyle="italic"
+                    android:textSize="24sp"
+                    android:id="@+id/eventdetail_formationhome"
+                    android:text="Not Played"
+                    android:gravity="center"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text=":"
+                    android:gravity="center"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:textStyle="italic"
+                    android:textSize="24sp"
+                    android:id="@+id/eventdetail_formationaway"
+                    android:text="Not Played"
+                    android:gravity="center"/>
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:id="@+id/eventdetail_buttonfav"
+            android:text="Add To FAVORITE"
+            android:textSize="24sp"
+            ></Button>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
