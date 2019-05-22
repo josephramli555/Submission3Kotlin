@@ -262,4 +262,9 @@
     <string name="action_settings">Settings</string>
     <string name="teams">teams</string>
     <string name="favorites">favorites</string>
+    <string name="appTitle">Football Ultimate APP</string>
+    <string name="league_list_and_match">League List and Match</string>
+    <string name="search_event">Search Event</string>
+    <string name="favorite_past_match">Favorite Past Match</string>
+    <string name="favorite_next_match">Favorite Next Match</string>
 </resources>

@@ -6,7 +6,7 @@ data class FavoritePastMatch (val id:Long?,val eventId:String?,val eventName:Str
     companion object {
         const val TABlE_NAME:String="TABLE_PAST"
         const val ID:String ="ID_"
-        const val EVENT_ID:String ="TEAM_ID"
+        const val EVENT_ID:String ="EVENT_ID"
         const val EVENT_NAME:String="EVENT_NAME"
         const val HOME_NAME:String="HOME_NAME"
         const val AWAY_NAME:String="AWAY_NAME"

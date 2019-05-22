@@ -6,25 +6,29 @@ import joseph.calcu.kotlinfirstsubmission.Database.SportDBAPI
 import joseph.calcu.kotlinfirstsubmission.Interface.LeagueInterface
 import joseph.calcu.kotlinfirstsubmission.Model.LeagueModel
 import joseph.calcu.kotlinfirstsubmission.Model.LeagueResponse
+import joseph.calcu.kotlinfirstsubmission.coroutine.CoroutineContextProvider
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 
 class LeagueDetailPresenter(private val view: LeagueInterface,
                             private val apiRepository: ApiRepository,
-                            private val gson: Gson
+                            private val gson: Gson,
+                            private val context: CoroutineContextProvider = CoroutineContextProvider()
 ) {
     fun getLeagueDetail(league: String?) {
         view.showLoading()
-        doAsync {
+        GlobalScope.launch (context.main){
             val data = gson.fromJson(apiRepository
-                .doRequest(SportDBAPI.getLeague(league)),
+                .doRequest(SportDBAPI.getLeague(league)).await(),
                 LeagueResponse::class.java
             )
 
-            uiThread {
+
                 view.hideLoading()
                 view.showLeagueList(data.leagues)
-            }
+
         }
     }
 }

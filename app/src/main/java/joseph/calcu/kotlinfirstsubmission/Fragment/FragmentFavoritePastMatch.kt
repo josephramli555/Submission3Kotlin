@@ -12,6 +12,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
+import android.widget.Toast
 import joseph.calcu.kotlinfirstsubmission.Activity.DetailEventActivity
 import joseph.calcu.kotlinfirstsubmission.Adapter.FavoriteMatchAdapter
 import joseph.calcu.kotlinfirstsubmission.DatabaseHelper.FavoriteNextMatch
@@ -24,7 +25,7 @@ import org.jetbrains.anko.find
 
 class FragmentFavoritePastMatch:Fragment() {
 
-    private lateinit var adapter:FavoriteMatchAdapter
+
     private var favList: MutableList<FavoritePastMatch> = mutableListOf()
     lateinit var rv:RecyclerView
     lateinit var progressBar: ProgressBar
@@ -35,7 +36,7 @@ class FragmentFavoritePastMatch:Fragment() {
         rv.layoutManager = LinearLayoutManager(this.context)
         progressBar=rootview.find<ProgressBar>(R.id.matchlist_progbar)
         activity?.title="Favorite Past Match"
-        adapter = FavoriteMatchAdapter(favList,this.context){
+        rv.adapter = FavoriteMatchAdapter(favList,this.context){
             val intent = Intent(this.context, DetailEventActivity::class.java)
             intent.putExtra(DetailEventActivity.EVENT_ID,it.eventId)
             intent.putExtra(DetailEventActivity.EVENT_TYPE,DetailEventActivity.PAST_ID)
@@ -48,13 +49,8 @@ class FragmentFavoritePastMatch:Fragment() {
     override fun onResume() {
         super.onResume()
         showFavorite()
-        adapter = FavoriteMatchAdapter(favList,this.context){
-            val intent = Intent(this.context, DetailEventActivity::class.java)
-            intent.putExtra(DetailEventActivity.EVENT_ID,it.eventId)
-            intent.putExtra(DetailEventActivity.EVENT_TYPE,DetailEventActivity.PAST_ID)
-            startActivity(intent)
-        }
         progressBar.invisible()
+
     }
 
     private fun showFavorite(){
@@ -63,7 +59,7 @@ class FragmentFavoritePastMatch:Fragment() {
             val result = select(FavoritePastMatch.TABlE_NAME)
             val favorite = result.parseList(classParser<FavoritePastMatch>())
             favList.addAll(favorite)
-            adapter.notifyDataSetChanged()
+            rv.adapter?.notifyDataSetChanged()
         }
 
 }

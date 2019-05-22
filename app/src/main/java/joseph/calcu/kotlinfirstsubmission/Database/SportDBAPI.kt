@@ -18,4 +18,8 @@ object SportDBAPI {
     fun getSearchEvent(Event:String?):String{
         return BuildConfig.BASE_URL+"api/v1/json/1/searchevents.php?e="+Event
     }
+
+    fun getTeamDetail(idTeam:String?):String{
+       return BuildConfig.BASE_URL+"api/v1/json/1/lookupteam.php?id="+idTeam
+    }
 }

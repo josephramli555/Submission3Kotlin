@@ -20,8 +20,40 @@
             android:src="@drawable/ic_menu_gallery"
             android:scaleType="fitCenter"/>
 
+        <LinearLayout
+                android:layout_below="@+id/eventdetail_poster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/detailevent_badges"
+                android:orientation="horizontal"
+                android:weightSum="5">
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_menu_gallery"
+                    android:scaleType="fitXY"
+                    android:gravity="center"
+                    android:id="@+id/detailevent_badgeshome"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text=""
+                    android:gravity="center"/>
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_menu_gallery"
+                    android:scaleType="fitXY"
+                    android:gravity="center"
+                    android:id="@+id/detailevent_badgesaway"/>
+        </LinearLayout>
     <LinearLayout
-            android:layout_below="@+id/eventdetail_poster"
+            android:layout_below="@+id/detailevent_badges"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/detailevent_headerhome"

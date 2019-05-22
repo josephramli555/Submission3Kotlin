@@ -1,8 +1,6 @@
 package joseph.calcu.kotlinfirstsubmission
 
-import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -10,16 +8,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.Toast
-import com.squareup.picasso.Picasso
-import joseph.calcu.kotlinfirstsubmission.Fragment.FragmentLeagueList
-import kotlinx.android.synthetic.main.activity_main.view.*
-import kotlinx.android.synthetic.main.nav_header_main_meny.*
+import joseph.calcu.kotlinfirstsubmission.Activity.DescriptionActivity
 import org.jetbrains.anko.*
-import org.jetbrains.anko.recyclerview.v7.recyclerView
 
 class MainActivity : Fragment() {
 
@@ -35,7 +26,8 @@ class MainActivity : Fragment() {
         list.layoutManager = LinearLayoutManager(this.context)
         list.adapter=RecyclerViewAdapter(leagueList,this.context)
         {
-            val intent = Intent(this@MainActivity.context,DescriptionActivity::class.java)
+            val intent = Intent(this@MainActivity.context,
+                DescriptionActivity::class.java)
             intent.putExtra(DescriptionActivity.POSITIONEXTRA,it)
             startActivity(intent)
             val toast = Toast.makeText(this@MainActivity.context, it.id, Toast.LENGTH_SHORT)

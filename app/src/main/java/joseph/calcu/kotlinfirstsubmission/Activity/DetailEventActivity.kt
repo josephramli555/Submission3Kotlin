@@ -22,9 +22,36 @@ import joseph.calcu.kotlinfirstsubmission.R
 import joseph.calcu.kotlinfirstsubmission.invisible
 import joseph.calcu.kotlinfirstsubmission.visible
 import joseph.calcu.kotlinfirstsubmission.DatabaseHelper.database
+import joseph.calcu.kotlinfirstsubmission.Interface.BadgesHomeInterface
+import joseph.calcu.kotlinfirstsubmission.Model.TeamDetailModel
+import joseph.calcu.kotlinfirstsubmission.Presenter.TeamBadgesPresenter
+import org.jetbrains.anko.backgroundColor
+import org.jetbrains.anko.colorAttr
+import org.jetbrains.anko.db.classParser
 import org.jetbrains.anko.db.insert
+import org.jetbrains.anko.db.delete
+import org.jetbrains.anko.db.select
 
-class DetailEventActivity:AppCompatActivity(),EventInterface {
+class DetailEventActivity:AppCompatActivity(),EventInterface,BadgesHomeInterface {
+    override fun showBadgeLoading() {
+        progbar.visible()
+    }
+
+    override fun hideBadgeLoading() {
+        progbar.invisible()
+    }
+
+    override fun showBadgeList(data: List<TeamDetailModel>, type: Int?) {
+        if(type==1)
+        {
+            Picasso.get().load(data[0].strTeamBadge).into(homeBadge)
+        }
+        else
+        {
+            Picasso.get().load(data[0].strTeamBadge).into(awayBadge)
+        }
+    }
+
     override fun showLoading() {
         progbar.visible()
     }
@@ -44,12 +71,22 @@ class DetailEventActivity:AppCompatActivity(),EventInterface {
         awayTeamScore.text=if(event.intAwayScore!=null)event.intAwayScore else "Not Played"
         formationHome.text=if(event.strHomeFormation!=null)event.strHomeFormation else "Not Played"
         formationAway.text=if(event.strAwayFormation!=null)event.strAwayFormation else "Not Played"
+
         matchDate.text= event.dateEvent
         val toast = Toast.makeText(this,event.strHomeFormation,Toast.LENGTH_SHORT)
         toast.show()
         Toast.makeText(this,event.strHomeFormation,Toast.LENGTH_SHORT).show()
         if(event.strThumb!=null)
             Picasso.get().load(event.strThumb).into(matchImg)
+        favoriteState()
+        setButton()
+
+        val request = ApiRepository()
+        val gson = Gson()
+        var presenter : TeamBadgesPresenter
+        presenter = TeamBadgesPresenter(this, request, gson)
+        presenter.getTeamBadges(event.idHomeTeam,1)
+        presenter.getTeamBadges(event.idAwayTeam,2)
     }
     companion object {
         var EVENT_ID="Event"
@@ -70,6 +107,11 @@ class DetailEventActivity:AppCompatActivity(),EventInterface {
     lateinit var progbar:ProgressBar
     lateinit var favButton:Button
     lateinit var eventType:String
+    lateinit var matchId:String
+    lateinit var homeBadge:ImageView
+    lateinit var awayBadge:ImageView
+    var currEventId:String="test"
+    var isAdded:Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_detailevent)
@@ -87,18 +129,33 @@ class DetailEventActivity:AppCompatActivity(),EventInterface {
         progbar=findViewById<ProgressBar>(R.id.eventdetail_progbar)
 
         favButton=findViewById<Button>(R.id.eventdetail_buttonfav)
+        homeBadge=findViewById<ImageView>(R.id.detailevent_badgeshome)
+        awayBadge=findViewById<ImageView>(R.id.detailevent_badgesaway)
 
-        favButton.setOnClickListener{
-            addToFavorite()
-        }
         var intent =intent
-        var matchid = intent.getStringExtra(EVENT_ID)
+        matchId = intent.getStringExtra(EVENT_ID)
         eventType=intent.getStringExtra(EVENT_TYPE)
+        favButton.setOnClickListener{
+            if(!isAdded){
+                addToFavorite()
+                favoriteState()
+                setButton()
+            }
+
+            else
+            {
+                removeFromFavorite()
+                favoriteState()
+                setButton()
+            }
+
+        }
         val request = ApiRepository()
         val gson = Gson()
         var presenter : EventDetailPresenter
         presenter = EventDetailPresenter(this, request, gson)
-        presenter.getEventDetail(matchid)
+        presenter.getEventDetail(matchId)
+
     }
 
     private fun addToFavorite(){
@@ -146,6 +203,64 @@ class DetailEventActivity:AppCompatActivity(),EventInterface {
             val toast= Toast.makeText(this, "Data Next inserted",Toast.LENGTH_SHORT)
             toast.show()
         }
+    }
+
+    private fun setButton(){
+        if(isAdded){
+            favButton.text="Remove From Favorite"
+        }
+    }
+
+    private fun favoriteState(){
+        if(eventType.equals(PAST_ID))
+        {
+            database.use {
+                val result = select(FavoritePastMatch.TABlE_NAME)
+                    .whereArgs("(EVENT_ID = {id})",
+                        "id" to matchId)
+                val favorite = result.parseList(classParser<FavoritePastMatch>())
+                if (!favorite.isEmpty())
+                    isAdded = true
+            }
+        }else
+        {
+            database.use {
+                val result = select(FavoriteNextMatch.TABlE_NAME)
+                    .whereArgs("(EVENT_ID = {id})",
+                        "id" to matchId)
+                val favorite = result.parseList(classParser<FavoritePastMatch>())
+                if (!favorite.isEmpty())
+                    isAdded = true
+            }
+        }
+
+    }
+
+    private fun removeFromFavorite(){
+        if(eventType.equals(PAST_ID))
+        {
+            try {
+                database.use {
+                    delete(FavoritePastMatch.TABlE_NAME, "(EVENT_ID = {id})",
+                        "id" to matchId)
+                }
+                var toast = Toast.makeText(this, "Data is Deleted",Toast.LENGTH_SHORT)
+                toast.show()
+            } catch (e: SQLiteConstraintException){
+            }
+        }
+        else{
+            try {
+                database.use {
+                    delete(FavoriteNextMatch.TABlE_NAME, "(EVENT_ID = {id})",
+                        "id" to matchId)
+                }
+                var toast = Toast.makeText(this, "Data is Deleted",Toast.LENGTH_SHORT)
+                toast.show()
+            } catch (e: SQLiteConstraintException){
+            }
+        }
+
     }
 
 }

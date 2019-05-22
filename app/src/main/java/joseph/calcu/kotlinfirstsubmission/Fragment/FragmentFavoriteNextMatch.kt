@@ -23,7 +23,6 @@ import org.jetbrains.anko.db.select
 import org.jetbrains.anko.find
 
 class FragmentFavoriteNextMatch: Fragment() {
-    private lateinit var adapter: FavoriteMatchAdapter
     private var favList: MutableList<FavoritePastMatch> = mutableListOf()
     lateinit var rv: RecyclerView
     lateinit var progressBar: ProgressBar
@@ -34,7 +33,7 @@ class FragmentFavoriteNextMatch: Fragment() {
         rv.layoutManager = LinearLayoutManager(this.context)
         progressBar=rootview.find<ProgressBar>(R.id.matchlist_progbar)
         progressBar.visible()
-        adapter = FavoriteMatchAdapter(favList,this.context){
+        rv.adapter = FavoriteMatchAdapter(favList,this.context){
             val intent = Intent(this.context, DetailEventActivity::class.java)
             intent.putExtra(DetailEventActivity.EVENT_ID,it.eventId)
             intent.putExtra(DetailEventActivity.EVENT_TYPE,DetailEventActivity.NEXT_ID)
@@ -60,7 +59,7 @@ class FragmentFavoriteNextMatch: Fragment() {
             val result = select(FavoriteNextMatch.TABlE_NAME)
             val favorite = result.parseList(classParser<FavoritePastMatch>())
             favList.addAll(favorite)
-            adapter.notifyDataSetChanged()
+            rv.adapter?.notifyDataSetChanged()
         }
 
     }

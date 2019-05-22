@@ -7,19 +7,19 @@
         <item
                 android:id="@+id/FragmentLeagueList"
                 android:icon="@drawable/soccer"
-                android:title="League List and Match"/>
+                android:title="@string/league_list_and_match"/>
         <item
                 android:id="@+id/searchevent"
                 android:icon="@drawable/ic_search"
-                android:title="Search Event"/>
+                android:title="@string/search_event"/>
         <item
                 android:id="@+id/favoritepastmatch"
                 android:icon="@drawable/baseline_favorite_24px"
-                android:title="Favorite Past Match"/>
+                android:title="@string/favorite_past_match"/>
         <item
                 android:id="@+id/favoritenextmatch"
                 android:icon="@drawable/baseline_favorite_24px"
-                android:title="Favorite Next Match"/>
+                android:title="@string/favorite_next_match"/>
     </group>
 
 

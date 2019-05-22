@@ -25,11 +25,12 @@ class FavoriteMatchAdapter(var list : List<FavoritePastMatch>, private val conte
     }
 
     class MatchViewHolder (itemView: View): RecyclerView.ViewHolder(itemView){
-        val homeTeam = itemView.findViewById<TextView>(R.id.favitem_hometeam)
-        val awayTeam = itemView.findViewById<TextView>(R.id.favitem_awayteam)
-        val dateText= itemView.findViewById<TextView>(R.id.favitem_matchdate)
-        val scoreHome = itemView.findViewById<TextView>(R.id.favitem_scorehome)
-        val scoreAway = itemView.findViewById<TextView>(R.id.favitem_scoreaway)
+        val homeTeam:TextView = itemView.findViewById(R.id.favitem_hometeam)
+        val awayTeam:TextView = itemView.findViewById(R.id.favitem_awayteam)
+        val dateText:TextView= itemView.findViewById(R.id.favitem_matchdate)
+        val scoreHome:TextView = itemView.findViewById(R.id.favitem_scorehome)
+        val scoreAway:TextView = itemView.findViewById(R.id.favitem_scoreaway)
+        val title:TextView = itemView.findViewById(R.id.favitem_title)
         fun bindItem(items:FavoritePastMatch,listener:(FavoritePastMatch)->Unit)
         {
             homeTeam.text = items.homeName
@@ -37,6 +38,7 @@ class FavoriteMatchAdapter(var list : List<FavoritePastMatch>, private val conte
             dateText.text = items.date
             scoreHome.text = items.scoreHome
             scoreAway.text = items.scoreAway
+            title.text = items.eventName
             itemView.setOnClickListener(){
                 listener(items)
             }
