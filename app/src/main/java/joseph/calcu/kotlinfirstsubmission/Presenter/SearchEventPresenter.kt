@@ -6,6 +6,7 @@ import joseph.calcu.kotlinfirstsubmission.Database.SportDBAPI
 import joseph.calcu.kotlinfirstsubmission.Interface.SearchEventInterface
 import joseph.calcu.kotlinfirstsubmission.Model.SearchEventResponse
 import joseph.calcu.kotlinfirstsubmission.coroutine.CoroutineContextProvider
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.jetbrains.anko.doAsync
@@ -13,8 +14,7 @@ import org.jetbrains.anko.uiThread
 
 class SearchEventPresenter(private val view: SearchEventInterface,
                            private val apiRepository: ApiRepository,
-                           private val gson: Gson,
-                           private val context: CoroutineContextProvider = CoroutineContextProvider()
+                           private val gson: Gson,private val context: CoroutineContextProvider = CoroutineContextProvider()
 ) {
     fun getSearchEventList(EventId: String?) {
         view.showLoading()
@@ -23,7 +23,6 @@ class SearchEventPresenter(private val view: SearchEventInterface,
                 .doRequest(SportDBAPI.getSearchEvent(EventId)).await(),
                 SearchEventResponse::class.java
             )
-
 
                 view.hideLoading()
                 view.showEventList(data.event)

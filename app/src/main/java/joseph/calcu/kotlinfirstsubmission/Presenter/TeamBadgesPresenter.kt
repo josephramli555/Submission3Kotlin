@@ -6,6 +6,7 @@ import joseph.calcu.kotlinfirstsubmission.Database.SportDBAPI
 import joseph.calcu.kotlinfirstsubmission.Interface.BadgesHomeInterface
 import joseph.calcu.kotlinfirstsubmission.Model.TeamDetailResponse
 import joseph.calcu.kotlinfirstsubmission.coroutine.CoroutineContextProvider
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.jetbrains.anko.doAsync
@@ -13,8 +14,7 @@ import org.jetbrains.anko.uiThread
 
 class TeamBadgesPresenter (private val view: BadgesHomeInterface,
                            private val apiRepository: ApiRepository,
-                           private val gson: Gson,
-                           private val context: CoroutineContextProvider = CoroutineContextProvider()
+                           private val gson: Gson,private val context: CoroutineContextProvider = CoroutineContextProvider()
 ){
 
     fun getTeamBadges(teamId: String?,type:Int?) {
@@ -24,10 +24,8 @@ class TeamBadgesPresenter (private val view: BadgesHomeInterface,
                 .doRequest(SportDBAPI.getTeamDetail(teamId)).await(),
                 TeamDetailResponse::class.java
             )
-
                 view.hideBadgeLoading()
-                view.showBadgeList(data.teams,type)
-
+                view.showBadgeList(data.teams, type)
         }
     }
 }

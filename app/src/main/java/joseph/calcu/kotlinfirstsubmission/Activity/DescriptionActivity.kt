@@ -14,6 +14,7 @@ import joseph.calcu.kotlinfirstsubmission.Fragment.FragmentPrevMatch
 import joseph.calcu.kotlinfirstsubmission.Interface.LeagueInterface
 import joseph.calcu.kotlinfirstsubmission.Model.LeagueModel
 import joseph.calcu.kotlinfirstsubmission.Presenter.LeagueDetailPresenter
+
 import org.jetbrains.anko.*
 
 class DescriptionActivity : AppCompatActivity(),LeagueInterface{
