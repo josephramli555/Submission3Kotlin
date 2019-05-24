@@ -8,14 +8,109 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AvailableLibraryUpdateStorage">
+    <library-updates>
+      <library-update>
+        <group-id>com.21buttons</group-id>
+        <name>fragment-test-rule</name>
+        <version>2.0.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>org.jetbrains.kotlin</group-id>
+        <name>kotlin-stdlib-jdk7</name>
+        <version>1.3.31</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.21buttons</group-id>
+        <name>fragment-test-rule-extras</name>
+        <version>2.0.1</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test</group-id>
+        <name>rules</name>
+        <version>1.0.2</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test</group-id>
+        <name>runner</name>
+        <version>1.0.2</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test.espresso</group-id>
+        <name>espresso-core</name>
+        <version>3.0.2</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test.espresso</group-id>
+        <name>espresso-contrib</name>
+        <version>3.0.2</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>recyclerview-v7</name>
+        <version>28.0.0</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>appcompat-v7</name>
+        <version>28.0.0</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.google.code.gson</group-id>
+        <name>gson</name>
+        <version>2.8.5</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.test.espresso</group-id>
+        <name>espresso-idling-resource</name>
+        <version>3.0.2</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support</group-id>
+        <name>cardview-v7</name>
+        <version>28.0.0</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.squareup.picasso</group-id>
+        <name>picasso</name>
+        <version>2.71828</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.github.bumptech.glide</group-id>
+        <name>glide</name>
+        <version>4.9.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+      <library-update>
+        <group-id>com.android.support.constraint</group-id>
+        <name>constraint-layout</name>
+        <version>2.0.0-beta1</version>
+        <repository>Google</repository>
+      </library-update>
+      <library-update>
+        <group-id>junit</group-id>
+        <name>junit</name>
+        <version>4.13-beta-3</version>
+        <repository>JCenter</repository>
+      </library-update>
+    </library-updates>
+    <last-search-timestamp>1558681663528</last-search-timestamp>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="56ceb9c0-ac39-4577-aca3-58511f82440d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_contrib_2_2_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_1_0_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_apps_common_testing_accessibility_framework_accessibility_test_framework_2_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/EspressoIdlingResource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/MatchListPresenterTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -27,22 +122,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_android_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Activity/DescriptionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Activity/DescriptionActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/ApiRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/ApiRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/EventDetailPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/EventDetailPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/LeagueDetailPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/LeagueDetailPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/MatchListPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/MatchListPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/SearchEventPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/SearchEventPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/TeamBadgesPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/TeamBadgesPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/coroutine/TestContextProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/TestContextProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentSearchEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentSearchEvent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/EventDetailPresenterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/EventDetailPresenterTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,86 +152,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/EventDetailPresenterTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Activity/DescriptionActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/EventDetailPresenter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/RecyclerViewAdapter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/ApiRepository.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Model/EventModel.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/EventInterface.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/coroutine/CoroutineContextProvider.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#54#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/ExampleUnitTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="3570">
+              <caret line="223" column="5" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,8 +164,83 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/TeamBadgesPresenter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="153">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/BadgesHomeInterface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/ExampleInstrumentedTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <folding>
+                <element signature="e#44#670#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentSearchEvent.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/LeagueInterface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/EventInterface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/MatchInterface.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -228,7 +313,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/unittesting/EventDetailPresenterTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/coroutine/TestContextProvider.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/MatchListPresenterTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/coroutine/CoroutineContextProvider.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/EspressoIdlingResource.kt" />
@@ -240,6 +324,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Activity/DescriptionActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/EventDetailPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/EventDetailPresenterTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentSearchEvent.kt" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt" />
       </list>
     </option>
   </component>
@@ -253,6 +339,65 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Fragment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Presenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -365,80 +510,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="coroutine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="Presenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="kotlinfirstsubmission" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submission3Kotlin" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="device.picker.selection" value="Nexus_S_API_24" />
+    <property name="device.picker.selection" value="a641cb627d24" />
     <property name="last_opened_file_path" value="D:/Project Android/Project 7 Testing/Kotlin-Android-Developer-Expert-project7-testing" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1558613191751" />
   </component>
@@ -460,7 +542,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.EventDetailPresenterTest">
+  <component name="RunManager" selected="Android JUnit.SearchViewTest">
     <configuration name="EventDetailPresenterTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -472,6 +554,23 @@
       <option name="PACKAGE_NAME" value="joseph.calcu.kotlinfirstsubmission" />
       <option name="MAIN_CLASS_NAME" value="joseph.calcu.kotlinfirstsubmission.EventDetailPresenterTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventDetailPresenterTest.getBadges" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="joseph.calcu.kotlinfirstsubmission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="joseph.calcu.kotlinfirstsubmission" />
+      <option name="MAIN_CLASS_NAME" value="joseph.calcu.kotlinfirstsubmission.EventDetailPresenterTest" />
+      <option name="METHOD_NAME" value="getBadges" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -629,6 +728,21 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="joseph.calcu.kotlinfirstsubmission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="joseph.calcu.kotlinfirstsubmission" />
+      <option name="MAIN_CLASS_NAME" value="joseph.calcu.kotlinfirstsubmission.SearchViewTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Android App.app" />
       <item itemvalue="Android Instrumented Tests.Unnamed" />
@@ -636,10 +750,15 @@
       <item itemvalue="Android JUnit.SearchViewTest" />
       <item itemvalue="Android JUnit.EventDetailPresenterTest.getEventDetail" />
       <item itemvalue="Android JUnit.EventDetailPresenterTest" />
+      <item itemvalue="Android JUnit.EventDetailPresenterTest.getBadges" />
+      <item itemvalue="JUnit.SearchViewTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.SearchViewTest" />
+        <item itemvalue="JUnit.SearchViewTest" />
         <item itemvalue="Android JUnit.EventDetailPresenterTest" />
+        <item itemvalue="Android JUnit.EventDetailPresenterTest.getBadges" />
         <item itemvalue="Android JUnit.EventDetailPresenterTest.getEventDetail" />
       </list>
     </recent_temporary>
@@ -658,35 +777,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 20h 02m 14s.xml">
-      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 20h 14m 10s.xml">
-      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest - 2019.05.23 at 20h 15m 28s.xml">
-      <configuration name="EventDetailPresenterTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 20h 17m 18s.xml">
-      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 21h 07m 14s.xml">
-      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 21h 07m 48s.xml">
-      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 21h 16m 35s.xml">
-      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest - 2019.05.23 at 21h 32m 15s.xml">
-      <configuration name="EventDetailPresenterTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="EventDetailPresenterTest - 2019.05.23 at 21h 33m 35s.xml">
-      <configuration name="EventDetailPresenterTest" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="EventDetailPresenterTest - 2019.05.23 at 21h 39m 03s.xml">
       <configuration name="EventDetailPresenterTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.23 at 21h 56m 55s.xml">
+      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="EventDetailPresenterTest_getEventDetail - 2019.05.24 at 12h 06m 54s.xml">
+      <configuration name="EventDetailPresenterTest.getEventDetail" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="EventDetailPresenterTest - 2019.05.24 at 13h 07m 16s.xml">
+      <configuration name="EventDetailPresenterTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="EventDetailPresenterTest - 2019.05.24 at 13h 24m 47s.xml">
+      <configuration name="EventDetailPresenterTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="SearchViewTest - 2019.05.24 at 13h 26m 57s.xml">
+      <configuration name="SearchViewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchViewTest - 2019.05.24 at 14h 00m 00s.xml">
+      <configuration name="SearchViewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchViewTest - 2019.05.24 at 14h 02m 54s.xml">
+      <configuration name="SearchViewTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchViewTest - 2019.05.24 at 14h 04m 07s.xml">
+      <configuration name="SearchViewTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="SearchViewTest - 2019.05.24 at 14h 04m 22s.xml">
+      <configuration name="SearchViewTest" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -702,7 +821,6 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Resources Explorer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.25037822" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Captures" order="2" sideWeight="0.5012225" side_tool="true" weight="0.2881997" />
@@ -711,14 +829,15 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
+      <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49848714" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.90468985" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.903177" visible="true" weight="0.31260228" />
       <window_info anchor="bottom" id="Debug" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.09531014" side_tool="true" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.09682299" side_tool="true" visible="true" weight="0.31260228" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49848714" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" weight="0.3295082" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.43267778" weight="0.4893617" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4311649" weight="0.4893617" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -756,18 +875,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/leaguedesc_activity.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/favoriteitem.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/DatabaseHelper/MyDatabaseOpenHelper.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510" />
@@ -777,13 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/BadgesHomeInterface.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -909,13 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentSearchEvent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="72" column="44" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/MatchListPresenterTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -941,13 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="85" selection-start-line="60" selection-start-column="85" selection-end-line="60" selection-end-column="85" />
         </state>
       </provider>
     </entry>
@@ -982,13 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentFavoritePastMatch.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
@@ -1000,13 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/ExampleInstrumentedTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1031,17 +1103,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/TeamBadgesPresenter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Activity/DescriptionActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Model/EventModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/EventDetailPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="306">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1059,30 +1131,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/ExampleUnitTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Model/EventModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Activity/DescriptionActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/EventInterface.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/coroutine/CoroutineContextProvider.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="102">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#54#133#0" expanded="true" />
@@ -1090,17 +1148,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/EventDetailPresenter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/ExampleUnitTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/LeagueInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/EventInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/MatchInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Interface/BadgesHomeInterface.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Presenter/TeamBadgesPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/joseph/calcu/kotlinfirstsubmission/EventDetailPresenterTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="3570">
+          <caret line="223" column="5" selection-start-line="223" selection-start-column="5" selection-end-line="223" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/ExampleInstrumentedTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/joseph/calcu/kotlinfirstsubmission/Fragment/FragmentSearchEvent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/joseph/calcu/kotlinfirstsubmission/SearchViewTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#44#670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

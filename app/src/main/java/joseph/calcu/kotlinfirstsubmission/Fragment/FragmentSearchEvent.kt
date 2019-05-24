@@ -9,14 +9,11 @@ import android.view.*
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.gson.Gson
+import joseph.calcu.kotlinfirstsubmission.*
 import joseph.calcu.kotlinfirstsubmission.Adapter.SearchEventAdapter
-import joseph.calcu.kotlinfirstsubmission.ApiRepository
 import joseph.calcu.kotlinfirstsubmission.Interface.SearchEventInterface
 import joseph.calcu.kotlinfirstsubmission.Model.SearchEventModel
 import joseph.calcu.kotlinfirstsubmission.Presenter.SearchEventPresenter
-import joseph.calcu.kotlinfirstsubmission.R
-import joseph.calcu.kotlinfirstsubmission.invisible
-import joseph.calcu.kotlinfirstsubmission.visible
 
 class FragmentSearchEvent: Fragment(),SearchEventInterface {
     override fun showLoading() {
@@ -28,6 +25,9 @@ class FragmentSearchEvent: Fragment(),SearchEventInterface {
     }
 
     override fun showEventList(data: List<SearchEventModel>?) {
+        if (!EspressoIdlingResource.idlingresource.isIdleNow) {
+            EspressoIdlingResource.decrement()
+        }
         eventList.clear()
         if(data!=null)
         {
@@ -76,6 +76,7 @@ class FragmentSearchEvent: Fragment(),SearchEventInterface {
 
         searchview.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
+                EspressoIdlingResource.increment()
                 presenter.getSearchEventList(query);
                 return false
             }
