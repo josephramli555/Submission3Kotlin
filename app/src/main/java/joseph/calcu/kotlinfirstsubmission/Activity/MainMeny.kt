@@ -27,8 +27,8 @@ class MainMeny : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLis
         setContentView(R.layout.activity_main_meny)
         setSupportActionBar(toolbar)
 
-        var fragment = MainActivity.newInstance()
-        startFragment(fragment)
+//        var fragment = MainActivity.newInstance()
+//        startFragment(fragment)
 
 
         val toggle = ActionBarDrawerToggle(

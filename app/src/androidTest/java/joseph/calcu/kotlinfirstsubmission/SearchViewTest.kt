@@ -27,15 +27,27 @@ class SearchViewTest {
 
     @Test
     fun testSearchView() {
-        onView(withId(R.id.searchmatch_rv)).check(matches(isDisplayed()))
-        onView(withId(R.id.searchmatch_progbar)).check(matches(isDisplayed()))
-        onView(withId(R.menu.search_menu)).check(matches(isDisplayed()))
-        onView(withId(R.menu.search_menu)).perform(click())
+//        onView(withId(R.id.searchmatch_rv)).check(matches(isDisplayed()))
+        onView(withId(R.id.action_search)).check(matches(isDisplayed()))
+        onView(withId(R.id.action_search)).perform(click())
     }
+
+//    @Test
+//    fun checkRecyclerView()
+//    {
+//        onView(withId(R.id.searchmatch_rv)).check(matches(isDisplayed()))
+//    }
 
     @Before
     fun setUp() {
         IdlingRegistry.getInstance().register(EspressoIdlingResource.idlingresource)
+        var fragment = FragmentSearchEvent.newInstance()
+        searchRule.getActivity().
+            supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.mainmenu,fragment,fragment.javaClass.simpleName)
+            .addToBackStack(fragment.javaClass.simpleName)
+            .commit()
     }
 
     @After

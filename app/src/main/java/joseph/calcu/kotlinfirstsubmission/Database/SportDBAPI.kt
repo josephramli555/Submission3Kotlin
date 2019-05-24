@@ -4,8 +4,11 @@ import joseph.calcu.kotlinfirstsubmission.BuildConfig
 
 object SportDBAPI {
     fun getLeague(league:String?):String{
-        return BuildConfig.BASE_URL +"api/v1/json/1/"+"lookupleague.php?id="+league;
+        return "${BuildConfig.BASE_URL}api/v1/json/1/lookupleague.php?id=$league";
     }
+//    fun getLeague(league:String?):String{
+//        return BuildConfig.BASE_URL +"api/v1/json/1/"+"lookupleague.php?id="+league;
+//    }
     fun getNextMatch(league:String?):String{
         return BuildConfig.BASE_URL+"api/v1/json/1/eventsnextleague.php?id="+league
     }
